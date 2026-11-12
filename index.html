@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ammu & Adi · Wedding Guide</title>
+<meta name="description" content="Everything you need for Ammu & Adi's wedding festivities, 3–6 December, Hubballi.">
+<meta property="og:title" content="Ammu & Adi · Wedding Guide">
+<meta property="og:description" content="Mehendi, Haldi, Sangeet & Muhurtham · 3–6 December · Hubballi">
+<meta property="og:image" content="images/muhurtham.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #fbf6ec;
+    --paper: #fffdf8;
+    --ink: #3b2f2a;
+    --muted: #7a6c63;
+    --line: #e9dfcd;
+    --gold: #b8892f;
+    --mehendi: #5f7a3c;
+    --haldi: #c98a12;
+    --sangeet: #4b3a8c;
+    --muhurtham: #a3182b;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Jost", system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+  /* ---------- Hero ---------- */
+  header.hero {
+    text-align: center;
+    padding: 56px 0 28px;
+    position: relative;
+  }
+  .arch {
+    width: min(420px, 90%);
+    margin: 0 auto;
+    padding: 40px 20px 28px;
+    border: 1.5px solid var(--gold);
+    border-bottom: none;
+    border-radius: 210px 210px 0 0;
+    position: relative;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+  h1 {
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(40px, 11vw, 58px);
+    white-space: nowrap;
+    line-height: 1;
+    margin: 14px 0 6px;
+    color: var(--muhurtham);
+  }
+  h1 .amp { color: var(--gold); opacity: .8; }
+  .names { font-size: 15px; letter-spacing: .08em; color: var(--muted); }
+  .when { margin-top: 14px; font-size: 16px; font-weight: 500; letter-spacing: .04em; }
+  .countdown {
+    display: inline-flex; gap: 18px; margin-top: 22px;
+    font-family: "Bodoni Moda", serif;
+  }
+  .countdown div { text-align: center; min-width: 48px; }
+  .countdown b { display: block; font-size: 28px; font-weight: 500; }
+  .countdown span { font-family: "Jost", sans-serif; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .countdown-msg { margin-top: 18px; font-family: "Bodoni Moda", serif; font-style: italic; font-size: 20px; color: var(--muhurtham); }
+
+  /* ---------- Search ---------- */
+  .search-section {
+    position: sticky; top: 0; z-index: 20;
+    background: linear-gradient(var(--cream) 82%, rgba(251,246,236,0));
+    padding: 14px 0 18px;
+  }
+  .search-box {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--paper);
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 8px 6px 18px;
+    box-shadow: 0 6px 24px rgba(120, 90, 40, .08);
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .search-box:focus-within { border-color: var(--gold); box-shadow: 0 6px 28px rgba(184, 137, 47, .18); }
+  .search-box svg { flex: none; color: var(--gold); }
+  .search-box input {
+    flex: 1; min-width: 0;
+    border: none; outline: none; background: transparent;
+    font: inherit; font-size: 17px; color: var(--ink);
+    padding: 10px 0;
+  }
+  .search-box input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+  .search-box input::placeholder { color: #a99b8f; }
+  .clear-btn {
+    flex: none; border: none; background: var(--cream); color: var(--muted);
+    width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 18px; line-height: 1;
+    visibility: hidden;
+  }
+  .clear-btn.show { visibility: visible; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; justify-content: center; }
+  .chip {
+    border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    font: inherit; font-size: 13.5px; padding: 6px 13px; border-radius: 999px; cursor: pointer;
+    transition: background .15s, border-color .15s;
+  }
+  .chip:hover { border-color: var(--gold); background: #fff7e6; }
+
+  /* ---------- Results ---------- */
+  #results { margin: 4px 0 8px; }
+  #results:empty { display: none; }
+  .results-head { font-size: 13px; color: var(--muted); margin: 0 4px 10px; }
+  .answer {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent, var(--gold));
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    animation: rise .25s ease both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .answer .icon { font-size: 22px; line-height: 1.2; flex: none; }
+  .answer .body { flex: 1; min-width: 0; }
+  .answer .label { font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent, var(--gold)); font-weight: 600; }
+  .answer .text { margin-top: 2px; font-size: 16px; }
+  .answer .text strong { font-weight: 600; }
+  .answer .actions { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13.5px; font-weight: 500; text-decoration: none;
+    padding: 7px 14px; border-radius: 999px;
+    background: var(--accent, var(--gold)); color: #fff;
+    border: none; cursor: pointer; font-family: inherit;
+  }
+  .btn.ghost { background: transparent; color: var(--accent, var(--gold)); border: 1px solid currentColor; }
+  .no-results { text-align: center; padding: 22px 16px; background: var(--paper); border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); }
+  .no-results p { margin: 0 0 10px; }
+
+  /* ---------- Schedule ---------- */
+  h2 {
+    font-family: "Bodoni Moda", serif; font-style: italic; font-weight: 400;
+    font-size: 34px; text-align: center; margin: 40px 0 6px;
+  }
+  .sub { text-align: center; color: var(--muted); margin: 0 0 26px; }
+  .event {
+    display: grid; grid-template-columns: 170px 1fr; gap: 22px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 18px;
+    scroll-margin-top: 150px;
+    transition: box-shadow .3s, border-color .3s;
+  }
+  .event.flash { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent); }
+  .invite-thumb {
+    display: block; padding: 0; border: none; background: none; cursor: zoom-in;
+    border-radius: 12px; overflow: hidden; align-self: start;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  }
+  .invite-thumb img { display: block; width: 100%; height: auto; }
+  .event .day { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .event h3 {
+    font-family: "Bodoni Moda", serif; font-style: italic; font-weight: 500;
+    font-size: 32px; line-height: 1.1; margin: 4px 0 8px; color: var(--accent);
+  }
+  .event .blurb { margin: 0 0 14px; }
+  .facts { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 8px; }
+  .facts li { display: flex; gap: 10px; font-size: 15px; }
+  .facts li span:first-child { flex: none; width: 22px; text-align: center; }
+  .facts b { font-weight: 600; }
+  .event .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center; padding: 34px 0 60px;
+  }
+  footer .note { max-width: 520px; margin: 0 auto 14px; color: var(--muted); }
+  footer .sign { font-family: "Bodoni Moda", serif; font-style: italic; font-size: 26px; color: var(--muhurtham); }
+
+  /* ---------- Lightbox ---------- */
+  dialog {
+    border: none; padding: 0; background: transparent; max-width: 94vw; max-height: 94vh;
+  }
+  dialog::backdrop { background: rgba(30, 20, 15, .78); }
+  dialog img { display: block; max-width: 94vw; max-height: 88vh; width: auto; height: auto; border-radius: 12px; }
+  dialog .close {
+    position: absolute; top: 8px; right: 8px; width: 38px; height: 38px; border-radius: 50%;
+    border: none; background: rgba(255,255,255,.92); font-size: 22px; cursor: pointer; line-height: 1;
+  }
+
+  @media (max-width: 620px) {
+    header.hero { padding-top: 34px; }
+    .event { grid-template-columns: 1fr; padding: 16px; }
+    .invite-thumb { max-width: 220px; justify-self: center; }
+    .event h3 { font-size: 28px; }
+    h2 { font-size: 30px; }
+    .search-box input { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="arch">
+    <div class="eyebrow">The countdown is on</div>
+    <h1>Ammu <span class="amp">&amp;</span> Adi</h1>
+    <div class="names">Amrutha &amp; Aditya</div>
+    <div class="when">3 – 6 December 2026 · Hubballi</div>
+    <div id="countdown"></div>
+  </div>
+</header>
+
+<section class="search-section">
+  <div class="wrap">
+    <label class="search-box" for="q">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Ask anything… “haldi dress code”, “where is sangeet”" aria-label="Search wedding info">
+      <button class="clear-btn" id="clear" type="button" aria-label="Clear search">×</button>
+    </label>
+    <div class="chips" id="chips"></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="results" aria-live="polite"></div>
+
+  <h2>The Festivities</h2>
+  <p class="sub">Four days of love, laughter and a lot of food.</p>
+  <div id="events"></div>
+</main>
+
+<footer class="wrap">
+  <p class="note">We can't wait to have our favourite people around us, making memories, laughing, eating and celebrating. A little reminder: come with your appetites, dancing shoes and unlimited love!</p>
+  <div class="sign">Lots of love, Ammu &amp; Adi ♡</div>
+</footer>
+
+<dialog id="lightbox">
+  <button class="close" type="button" aria-label="Close">×</button>
+  <img alt="">
+</dialog>
+
+<script>
+/* =========================================================
+   WEDDING DATA — edit here to update the whole site
+   ========================================================= */
+const EVENTS = [
+  {
+    id: "mehendi", emoji: "🌿", name: "Mehendi", title: "Mehendi & Gossip",
+    color: "var(--mehendi)",
+    dateLabel: "Thursday, 3rd December", short: "3 Dec", start: "2026-12-03T16:00", end: "2026-12-03T22:00",
+    time: "4 PM onwards",
+    venue: "Rotsan Regency, Vidya Nagar, Hubballi",
+    map: "https://maps.app.goo.gl/8UDkphgbupgwKE3y8",
+    dress: "PJs! Come in your comfy best.", dressEmoji: "🩳",
+    food: "Dinner to follow (plus yummy sips!)",
+    blurb: "An evening of gossip, yummy sips, mehendi, endless conversations and teasing (which is absolutely mandatory!).",
+    image: "images/mehendi.jpg",
+    keywords: ["mehendi","mehndi","mehandi","henna","gossip","pj","pjs","pyjama","pajama","3","3rd","thursday"]
+  },
+  {
+    id: "haldi", emoji: "🌼", name: "Haldi", title: "Let's Get Haldi-ed!",
+    color: "var(--haldi)",
+    dateLabel: "Friday, 4th December", short: "4 Dec", start: "2026-12-04T16:00", end: "2026-12-04T22:00",
+    time: "4 PM onwards",
+    venue: "Rotsan Regency, Vidya Nagar, Hubballi",
+    map: "https://maps.app.goo.gl/8UDkphgbupgwKE3y8",
+    dress: "YELLOW! Let's bring on the sunshine.", dressEmoji: "💛",
+    food: "Good food to devour, with dinner to follow",
+    blurb: "Games, haldi, food, laughter and lots of fun! Come ready to participate, because sitting out is not an option!",
+    image: "images/haldi.jpg",
+    keywords: ["haldi","haldhi","turmeric","yellow","games","game","4","4th","fourth","friday"]
+  },
+  {
+    id: "sangeet", emoji: "🥁", name: "Sangeet", title: "Sangeet & Sparkle",
+    color: "var(--sangeet)",
+    dateLabel: "Saturday, 5th December", short: "5 Dec", start: "2026-12-05T18:00", end: "2026-12-05T23:30",
+    time: "6 PM onwards",
+    venue: "Shree Shiva Mandira, Hubballi",
+    map: "https://maps.app.goo.gl/jASsHP8RVTx52Hwn8",
+    dress: "BRING YOUR BLING! Time to sparkle.", dressEmoji: "✨",
+    food: "Dinner to follow",
+    blurb: "Music, dancing, performances and a whole lot of celebration! Get ready for an evening of glitz, glamour and some serious dancing.",
+    image: "images/sangeet.jpg",
+    keywords: ["sangeet","sangit","sparkle","bling","glitz","glamour","dance","dancing","music","performance","performances","perform","party","5","5th","fifth","saturday"]
+  },
+  {
+    id: "muhurtham", emoji: "❤️", name: "Muhurtham", title: "The Wedding · Aditya & Amrutha",
+    color: "var(--muhurtham)",
+    dateLabel: "Sunday, 6th December", short: "6 Dec", start: "2026-12-06T11:30", end: "2026-12-06T15:30",
+    time: "11:30 AM (Wedding Muhurtham)",
+    venue: "Shree Shiva Mandira, Hubballi",
+    map: "https://maps.app.goo.gl/jASsHP8RVTx52Hwn8",
+    dress: "South Indian traditional attire.", dressEmoji: "🥻",
+    food: "Lunch, after the Dhodaakki Kallu celebrations",
+    blurb: "The big day! Join us as we tie the knot and begin this beautiful new chapter together, followed by Dhodaakki Kallu celebrations and lunch.",
+    image: "images/muhurtham.jpg",
+    keywords: ["muhurtham","muhurtam","muhurta","muhurat","muhoortham","wedding","marriage","shaadi","shadi","ceremony","knot","big","main","dhodaakki","dodakki","kallu","traditional","saree","sari","veshti","dhoti","6","6th","sixth","sunday","last","final"]
+  }
+];
+
+/* Topic synonyms: any of these words in a query point to that topic */
+const TOPICS = {
+  dress:  ["dress","code","dresscode","wear","wearing","outfit","outfits","clothes","clothing","attire","costume","theme","colour","color","pj","pjs","pyjama","pajama","yellow","bling","saree","sari","veshti","dhoti","traditional","kurta","lehenga"],
+  venue:  ["where","venue","venues","location","locations","place","address","map","maps","directions","direction","hall","reach","go","hotel","rotsan","regency","vidya","nagar","shiva","mandira","temple","hubballi","hubli"],
+  time:   ["when","time","timing","timings","date","dates","day","days","start","starts","begin","begins","clock","schedule","pm","am","timing","late","early","oclock"],
+  food:   ["food","eat","eating","dinner","lunch","meal","meals","sips","drinks","drink","menu","hungry","appetite","appetites"],
+  about:  ["what","happening","plan","plans","activities","activity","about","details","info","happens","expect"]
+};
+
+const GENERAL = [
+  { icon: "💍", label: "The couple", text: "<strong>Ammu (Amrutha) &amp; Adi (Aditya)</strong> are getting married on <strong>Sunday, 6th December 2026</strong> at Shree Shiva Mandira, Hubballi.",
+    keywords: ["couple","bride","groom","ammu","adi","amrutha","aditya","who","names","married"] },
+  { icon: "🎒", label: "What to bring", text: "Come with your <strong>appetites, dancing shoes and unlimited love!</strong>",
+    keywords: ["bring","carry","pack","shoes","gift","gifts","love","need"] },
+  { icon: "📅", label: "Full schedule", text: EVENTS.map(e => `<strong>${e.short}</strong> · ${e.name} · ${e.time}`).join("<br>"),
+    keywords: ["schedule","all","events","itinerary","programme","program","everything","list","overview","days","dates","functions"] },
+  { icon: "🏨", label: "Two venues", text: "<strong>Rotsan Regency, Vidya Nagar</strong> for Mehendi &amp; Haldi (3rd &amp; 4th).<br><strong>Shree Shiva Mandira</strong> for Sangeet &amp; Muhurtham (5th &amp; 6th).",
+    keywords: ["venues","locations","places","both","hubballi","hubli","city"] }
+];
+
+/* =========================================================
+   Helpers
+   ========================================================= */
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+function gcalLink(e) {
+  const fmt = s => s.replace(/[-:]/g, "") + "00";
+  const p = new URLSearchParams({
+    action: "TEMPLATE",
+    text: `${e.name} · Ammu & Adi's Wedding`,
+    dates: `${fmt(e.start)}/${fmt(e.end)}`,
+    ctz: "Asia/Kolkata",
+    details: `${e.blurb}\n\nDress code: ${e.dress}\nMap: ${e.map}`,
+    location: e.venue
+  });
+  return "https://calendar.google.com/calendar/render?" + p.toString();
+}
+
+const mapBtn = (e, ghost) => `<a class="btn${ghost ? " ghost" : ""}" href="${e.map}" target="_blank" rel="noopener">📍 Open in Maps</a>`;
+const calBtn = e => `<a class="btn ghost" href="${gcalLink(e)}" target="_blank" rel="noopener">🗓 Add to calendar</a>`;
+const viewBtn = e => `<button class="btn ghost" type="button" data-goto="${e.id}">View invite ↓</button>`;
+
+/* =========================================================
+   Render the schedule cards
+   ========================================================= */
+$("#events").innerHTML = EVENTS.map(e => `
+  <article class="event" id="${e.id}" style="--accent:${e.color}">
+    <button class="invite-thumb" type="button" data-img="${e.image}" data-alt="${esc(e.title)} invitation" aria-label="View ${e.name} invitation">
+      <img src="${e.image}" alt="${esc(e.title)} invitation" loading="lazy" width="694" height="1040">
+    </button>
+    <div>
+      <div class="day">${e.emoji} ${e.dateLabel}</div>
+      <h3>${e.name}</h3>
+      <p class="blurb">${e.blurb}</p>
+      <ul class="facts">
+        <li><span>🕓</span><span><b>${e.time}</b></span></li>
+        <li><span>📍</span><span>${e.venue}</span></li>
+        <li><span>${e.dressEmoji}</span><span><b>Dress code:</b> ${e.dress}</span></li>
+        <li><span>🍽</span><span>${e.food}</span></li>
+      </ul>
+      <div class="actions">${mapBtn(e)}${calBtn(e)}</div>
+    </div>
+  </article>`).join("");
+
+/* =========================================================
+   Countdown
+   ========================================================= */
+function renderCountdown() {
+  const target = new Date("2026-12-06T11:30:00+05:30");
+  const now = new Date();
+  const diff = target - now;
+  const el = $("#countdown");
+  if (diff <= 0) {
+    const after = now - target;
+    el.innerHTML = `<div class="countdown-msg">${after < 864e5 ? "Today's the day! ❤️" : "Just married! ❤️"}</div>`;
+    return;
+  }
+  const d = Math.floor(diff / 864e5), h = Math.floor(diff / 36e5) % 24, m = Math.floor(diff / 6e4) % 60;
+  el.innerHTML = `<div class="countdown">
+    <div><b>${d}</b><span>days</span></div>
+    <div><b>${h}</b><span>hours</span></div>
+    <div><b>${m}</b><span>mins</span></div></div>`;
+}
+renderCountdown();
+setInterval(renderCountdown, 30000);
+
+/* =========================================================
+   Search
+   ========================================================= */
+const CHIPS = ["Dress codes", "Venues", "Haldi", "Sangeet", "Wedding", "Timings", "Food", "What's next?"];
+$("#chips").innerHTML = CHIPS.map(c => `<button class="chip" type="button">${c}</button>`).join("");
+
+const STOP = new Set(["the","is","a","an","of","to","for","at","in","on","and","or","i","we","do","does","should","can","there","any","it","be","my","me","you","your","our","us","will","are","was","with","have","has","so","this","that","which","how","much","please","pls"]);
+function tokenize(q) {
+  return q.toLowerCase()
+    .replace(/\b\d{1,2}(:\d{2})?\s*(pm|am)\b/g, " time ")
+    .replace(/(\d+)\s*(st|nd|rd|th)\b/g, "$1")
+    .replace(/[’'`]s\b/g, "")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/).filter(t => t && !STOP.has(t));
+}
+
+// light fuzzy match: exact, prefix (≥3 chars), or one typo for longer words
+function similar(a, b) {
+  if (a === b) return true;
+  if (a.length >= 3 && b.startsWith(a)) return true;
+  if (Math.min(a.length, b.length) >= 5 && Math.max(a.length, b.length) >= 6 && Math.abs(a.length - b.length) <= 1) {
+    let i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++edits > 1) return false;
+      if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+    }
+    return edits + (a.length - i) + (b.length - j) <= 1;
+  }
+  return false;
+}
+const hits = (tokens, list) => tokens.some(t => list.some(k => similar(t, k)));
+
+function nextEvent() {
+  const now = new Date();
+  return EVENTS.find(e => new Date(e.end + ":00+05:30") > now);
+}
+
+function eventAnswer(e, topic) {
+  const base = { accent: e.color, event: e };
+  switch (topic) {
+    case "dress": return { ...base, icon: e.dressEmoji, label: `${e.name} · Dress code`, text: `<strong>${e.dress}</strong>` };
+    case "venue": return { ...base, icon: "📍", label: `${e.name} · Venue`, text: `<strong>${e.venue}</strong>`, actions: mapBtn(e) };
+    case "time":  return { ...base, icon: "🕓", label: `${e.name} · When`, text: `<strong>${e.dateLabel}</strong>, ${e.time}`, actions: calBtn(e) };
+    case "food":  return { ...base, icon: "🍽", label: `${e.name} · Food`, text: e.food };
+    default:      return { ...base, icon: e.emoji, label: `${e.name} · ${e.short}`,
+      text: `${e.blurb}<br><br>🕓 <strong>${e.dateLabel}, ${e.time}</strong><br>📍 ${e.venue}<br>${e.dressEmoji} <strong>Dress code:</strong> ${e.dress}<br>🍽 ${e.food}`,
+      actions: mapBtn(e) + calBtn(e) + viewBtn(e) };
+  }
+}
+
+function search(query) {
+  const tokens = tokenize(query);
+  if (!tokens.length) return null;
+
+  // "today / tomorrow / next / tonight"
+  let matchedEvents = EVENTS.filter(e => hits(tokens, e.keywords) || tokens.includes(e.id));
+  if (hits(tokens, ["next","upcoming","today","tonight","now","tomorrow"])) {
+    const now = new Date();
+    let target = nextEvent();
+    if (tokens.includes("tomorrow")) {
+      const t = new Date(now.getTime() + 864e5).toISOString().slice(0, 10);
+      target = EVENTS.find(e => e.start.startsWith(t)) || target;
+    }
+    if (target && !matchedEvents.includes(target)) matchedEvents.push(target);
+  }
+  // A bare number like "3" shouldn't match everything; "dec" means all events
+  if (tokens.length === 1 && hits(tokens, ["december","dec"])) matchedEvents = EVENTS.slice();
+
+  const topics = Object.keys(TOPICS).filter(t => hits(tokens, TOPICS[t]));
+  // event-defining words (e.g. "yellow", "bling") also look like dress words — only treat as a topic if it's not the event's own keyword
+  const topicTokens = t => tokens.filter(tok => TOPICS[t].some(k => similar(tok, k)));
+  const realTopics = topics.filter(t => {
+    if (!matchedEvents.length) return true;
+    return topicTokens(t).some(tok => !matchedEvents.some(e => e.keywords.some(k => similar(tok, k))));
+  });
+
+  const results = [];
+  const general = GENERAL.filter(g => hits(tokens, g.keywords));
+
+  if (matchedEvents.length) {
+    const specific = realTopics.filter(t => t !== "about");
+    for (const e of matchedEvents) {
+      if (specific.length) specific.forEach(t => results.push(eventAnswer(e, t)));
+      else results.push(eventAnswer(e));
+    }
+  } else if (realTopics.length) {
+    const specific = realTopics.filter(t => t !== "about");
+    if (specific.includes("venue") && !general.some(g => g.label === "Two venues")) general.push(GENERAL[3]);
+    for (const t of specific) EVENTS.forEach(e => results.push(eventAnswer(e, t)));
+    if (!specific.length) EVENTS.forEach(e => results.push(eventAnswer(e)));
+  }
+
+  // prepend general facts that matched
+  results.unshift(...general.map(g => ({ ...g, accent: "var(--gold)" })));
+
+  // Fallback: full-text search through every event's details
+  if (!results.length) {
+    for (const e of EVENTS) {
+      const words = tokenize([e.name, e.title, e.blurb, e.venue, e.dress, e.food, e.time, e.dateLabel].join(" "));
+      if (tokens.filter(t => t.length > 2).some(t => words.some(w => similar(t, w)))) results.push(eventAnswer(e));
+    }
+  }
+  // de-duplicate
+  const seen = new Set();
+  return results.filter(r => { const k = r.label; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
+function render(query) {
+  const box = $("#results");
+  $("#clear").classList.toggle("show", !!query);
+  const res = search(query);
+  if (res === null) { box.innerHTML = ""; return; }
+  if (!res.length) {
+    box.innerHTML = `<div class="no-results"><p>Hmm, couldn't find anything for “${esc(query)}”. Try one of these:</p>
+      <div class="chips" style="margin:0">${["Dress codes","Venues","Timings","Food","Schedule"].map(c => `<button class="chip" type="button">${c}</button>`).join("")}</div></div>`;
+    return;
+  }
+  box.innerHTML = `<div class="results-head">${res.length} answer${res.length > 1 ? "s" : ""}</div>` +
+    res.map(r => `
+      <div class="answer" style="--accent:${r.accent}">
+        <div class="icon">${r.icon}</div>
+        <div class="body">
+          <div class="label">${r.label}</div>
+          <div class="text">${r.text}</div>
+          ${r.actions ? `<div class="actions">${r.actions}</div>` : ""}
+        </div>
+      </div>`).join("");
+}
+
+const input = $("#q");
+input.addEventListener("input", () => {
+  render(input.value);
+  const url = new URL(location.href);
+  input.value ? url.searchParams.set("q", input.value) : url.searchParams.delete("q");
+  history.replaceState(null, "", url);
+});
+$("#clear").addEventListener("click", () => { input.value = ""; input.dispatchEvent(new Event("input")); input.focus(); });
+
+document.addEventListener("click", ev => {
+  const chip = ev.target.closest(".chip");
+  if (chip) {
+    input.value = chip.textContent.replace("?", "");
+    input.dispatchEvent(new Event("input"));
+    return;
+  }
+  const go = ev.target.closest("[data-goto]");
+  if (go) {
+    const card = document.getElementById(go.dataset.goto);
+    card.scrollIntoView({ behavior: "smooth", block: "start" });
+    card.classList.add("flash");
+    setTimeout(() => card.classList.remove("flash"), 1600);
+    return;
+  }
+  const thumb = ev.target.closest("[data-img]");
+  if (thumb) {
+    const lb = $("#lightbox"), img = lb.querySelector("img");
+    img.src = thumb.dataset.img; img.alt = thumb.dataset.alt;
+    lb.showModal();
+  }
+});
+$("#lightbox").addEventListener("click", ev => {
+  if (ev.target.closest(".close") || ev.target.id === "lightbox") $("#lightbox").close();
+});
+
+// Support shareable links like ?q=haldi
+const initial = new URLSearchParams(location.search).get("q");
+if (initial) { input.value = initial; render(initial); }
+</script>
+</body>
+</html>
